@@ -1,7 +1,7 @@
 import React from 'react';
 import './Project.css';
 import { projects } from '../../portfolio';
-import ProjectCard from '../ProjectCard/ProjectCard';
+import AchievementCard from '../AhievementCard/AchievementCard'
 
 function Project() {
     return (
@@ -11,13 +11,10 @@ function Project() {
                 <div className="project-title">
                     <p>{projects.title}</p>
                 </div>
-                <div className="project-subtitle">
-                    <p>{projects.subTitle}</p>
-                </div>
 
                 <div className="project-cards">
                     {projects.lists.map((list, i) => {
-                        return <ProjectCard project={list} key={i} />
+                        return <AchievementCard achieves={list} key={i} />
                     })}
                 </div>
 

@@ -24,10 +24,6 @@ function Hello() {
 					<div className="social-links">
 						<Social />
 					</div>
-					<div className="wrapper-links">
-						<a href="#contact" id="about">Contact &gt;</a>
-						<a href={greeting.resumeLink} id="resume" target="_blank" rel="noopener noreferrer">View Resume &gt;</a>
-					</div>
 				</div>
 
 			</div>
@@ -36,3 +32,9 @@ function Hello() {
 	);
 }
 export default Hello;
+
+
+//                     <div className="wrapper-links">
+// 						<a href="#contact" id="about">Contact &gt;</a>
+// 						<a href={greeting.resumeLink} id="resume" target="_blank" rel="noopener noreferrer">View Resume &gt;</a>
+// 					</div>

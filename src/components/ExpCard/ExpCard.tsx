@@ -17,6 +17,9 @@ function ExpCard({ experience }: Props) {
                 <div className="expcard-date">
                     {experience.date}
                 </div>
+                <div className="expcard-summary">
+                    {experience.summary}
+                </div>
 
             </div>
         </div>
@@ -27,7 +30,8 @@ interface Props {
     experience : {
         role: string,
         company: string,
-        date: string | number
+        date: string | number,
+        summary: string
     }
 }
 export default ExpCard;

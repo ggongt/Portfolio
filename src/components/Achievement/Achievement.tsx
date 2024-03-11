@@ -12,10 +12,6 @@ function Achievement() {
                     <p>{achievements.title}</p>
                 </div>
 
-                <div className="achieve-subtitle">
-                    <p>{achievements.subTitle}</p>
-                </div>
-
                 <div className="achieve-content">
                     {achievements.lists.map((list, i) => {
                         return <AchievementCard achieves={list} key={i} />

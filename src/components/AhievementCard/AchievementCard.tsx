@@ -6,11 +6,11 @@ function AchievementCard({ achieves }: Props) {
     return(
         <Fade bottom duration={800}>
         <div className="achieve-card">
-            <div className="achieve-card-img">
-                <img src={achieves.img} alt={achieves.alt}/>
-            </div>
             <div className="achieve-card-title">
                 <p>{achieves.title}</p>
+            </div>
+            <div className="achieve-card-date">
+                <p>{achieves.date}</p>
             </div>
             <div className="achieve-card-desc">
                 <p>{achieves.desc}</p>
@@ -19,11 +19,19 @@ function AchievementCard({ achieves }: Props) {
         </Fade>
     );
 }
+
+//             <div className="achieve-card-img">
+//                 <img src={achieves.img} alt={achieves.alt}/>
+//             </div>
+
+
+
 interface Props {
     achieves: {
-        img: string,
-        alt: string,
+//         img: string,
+//         alt: string,
         title: string,
+        date: string,
         desc: string
     }
 }
